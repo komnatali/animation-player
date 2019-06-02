@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation Player</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="burger-task">
+            <div>
+                <span class = "icon icon-menu"></span>
+            </div>
+            <p>Animation Player</p>
+        </div>
+        <div class="more">
+            <span class = "icon icon-more"></span>
+        </div>
+    </section>
+
+    <div class="content">
+        <aside class="pallete-colors">
+            <div class="pallete">
+                <div class="tool">
+                    <div class="tool-icon tool-icon-bucket"><span class = "icon icon-bucket"></span></div>
+                    <div class="tool-name">Paint bucket</div>
+                    <div class="shortcut">(g)</div>
+                </div>
+                <div class="tool">
+                    <div class="tool-icon tool-icon-picker"><span class = "icon icon-picker" ></span></div>
+                    <div class="tool-name">Choose color</div>
+                    <div class="shortcut">(i)</div>
+                </div>
+            </div>
+    
+            <div class="colors">
+                <div class="color">
+                    <div class="color-icon color-icon-current"></div>
+                    <div class="color-text">Current color</div>
+                </div>
+                <div class="color">
+                    <div class="color-icon color-icon-prev"></div>
+                    <div class="color-text">Prev color</div>
+                </div>
+                <div class="color">
+                    <div class="color-icon color-icon-1"></div>
+                    <div class="color-text">Gold</div>
+                </div>
+                <div class="color">
+                    <div class="color-icon color-icon-2"></div>
+                    <div class="color-text">SpringGreen</div>
+                </div>
+            </div>
+        </aside>
+        
+        <section class="frames">
+            <div class="add-frame">
+                <span class="icon icon-bucket"></span>
+                <div class="add-frame-text">Add new frame</div>
+            </div>
+        </section>
+
+        <section class="figure-field">
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+            <div class="figure"></div>
+        </section>
+
+        <div class="preview">
+          <canvas class="preview-canvas"></canvas>
+          <div class="range">
+            <input type="range" class="fps-range" value="12" name="fps" min="1" max="24">
+            <label for="fps" class = "fps-text">12 FPS</label>
+          </div>
+          <button class="full-screen-button">full screen</button>
+        </div>
+    </div>
+    <script src="./html2canvas.js"></script>
+    <script src="dist/app.bundle.js"></script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
